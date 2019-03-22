@@ -1,0 +1,13 @@
+/*
+ * @Author: pengpeng.zhu
+ * @LastEditors: pengpeng.zhu
+ * @Date: 2019-02-28 14:17:33
+ * @LastEditTime: 2019-03-05 20:39:39
+ * @Description: 列表页的公共样式
+ */
+ .content {
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+ }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- xbb-pro -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1020340_5ratwqvam3r.css">
+    <!-- xbb-pro-web -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1020343_544esovl5y3.css">
+    <title>xbb-pro-web-front</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html,body{
+      height: 100%;
+      width: 100%;
+    }
+    </style>
+    <script src="https://dingtalkapi.xbongbong.com/js/data.city-3.js"></script>
+    <script src="./static/iconfont-web.js"></script>
+    <script src="./static/echarts.min.js"></script>
+    <script src="./static/china.js"></script>
+    <script src="./static/jsplumb.js"></script>
+
+    <script>
+      const province = ['anhui', 'aomen', 'beijing', 'chongqing', 'fujian', 'gansu', 'guangdong', 'guangxi', 'guizhou', 'hainan',
+    'hebei', 'heilongjiang', 'henan', 'hubei', 'hunan', 'jiangsu', 'jiangxi', 'jilin', 'liaoning', 'neimenggu', 'ningxia',
+  'qinghai', 'shandong', 'shanghai', 'shanxi', 'shanxi1', 'sichuan', 'taiwan', 'tianjin', 'xianggang', 'xinjiang', 'xizang', 'yunnan', 'zhejiang']
+      province.forEach((item) => {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = './static/province/' + item + '.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+      })
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
